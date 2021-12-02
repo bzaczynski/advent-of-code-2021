@@ -28,7 +28,7 @@ def solve(commands: list[Command], position: Position | PositionWithAim) -> int:
     for command in commands:
         position.apply(command)
     return position.product
-q
+
 
 def load(path: str) -> list[Command]:
     """Return a list of course commands.
