@@ -25,7 +25,7 @@ class Position:
     depth: int = 0
 
     @property
-    def product(self):
+    def product(self) -> int:
         return self.horizontal * self.depth
 
     def forward(self, distance: int) -> None:
