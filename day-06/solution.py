@@ -6,9 +6,9 @@
 # $ python solution.py input.txt
 # """
 
-import functools
 import sys
 from collections import Counter
+from functools import cache
 
 
 def main(fish: list[int]) -> None:
@@ -23,7 +23,7 @@ def solve(fish: list[int], days: int) -> int:
     )
 
 
-@functools.lru_cache
+@cache
 def offsprings(days: int) -> int:
     """Return the number of fish offsprings after the given number of days."""
     total = 1
